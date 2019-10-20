@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D5D9E0;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: orange;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #24272a;
+}
+
+section {
+    display: flex;
+    flex: 1;
+}
+
+nav ul {
+    background-color: purple;
+    padding: 0;
+    flex: 0 0 250px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: absolute;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: salmon;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+article {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 2em;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: left;
+  padding: 5% 0 0 8%;
+  margin: 0;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+h2 {
+  color: #ffffff;
+  text-align: left;
+  padding: .5em 0 5% 8%;
+  font-weight: 700;
+  letter-spacing: 100;
+  margin: 0;
+  font-size: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 0 30px 15px 30px;
+  margin: 20px 8% 20px 8%;
+}
+
+h3 {
+  color: #24272a;
+  text-align: left;
+  padding: 40px 0 0 0;
+  font-weight: 700;
+  margin: 0;
+  font-size: 18px;
+}
+
+h4 {
+  color: #24272a;
+  text-align: left;
+  padding: 5px 0 0 0;
+  font-weight: 400;
+  margin: 0;
+  font-size: 14px;
+}
+
+p {
+    color: #24272a;
+  text-align: left;
+  padding: 10px 0 0 0;
+  font-weight: 400;
+  margin: 0;
+  font-size: 12px;
+}
+
+.tag-hour {
+    background: #D5D9E0;
+  border-radius: 20px;
+  color: #24272a;
+  font-size: 12px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 15px 0 15px;
+  margin: 20px 10px 10px 0;
+    position: relative;
+  text-decoration: none;
+  align: right;
+  font-weight: 700;
+}
+
+.tag-lesson {
+    background: #D5D9E0;
+  border-radius: 20px;
+  color: #24272a;
+  font-size: 12px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 15px 0 15px;
+  margin: 20px 10px 10px 0;
+    position: relative;
+  text-decoration: none;
+  align: right;
+  font-weight: 700;
+}
+
+.tag-tool {
+    background: #D5D9E0;
+  border-radius: 20px;
+  color: #24272a;
+  font-size: 12px;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 15px 0 15px;
+  margin: 20px 10px 10px 0;
+    position: relative;
+  text-decoration: none;
+  align: right;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) { section {
+    flex-direction: column;
+    }
+    nav, aside {
+        flex-basis: auto;
+    }
+}
